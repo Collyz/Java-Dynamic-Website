@@ -11,39 +11,80 @@
     <title>Java Dynamic Website Tutorial</title>
 </head>
 <body data-bs-theme="dark">
-    <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Java Dynamic Website Tutorial</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                            About
-                        </a>
-                        <ul class="dropdown-menu">
-                            <li>
-                                <a class="dropdown-item" href="pages/about.html">About Page</a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" aria-current="page" href="https://github.com/Collyz">My GitHub: <i class="bi bi-github"></i></a>
-                            </li>
-                            <li>
-                                <a class="dropdown-item" href="https://github.com/Collyz/Java-Dynamic-Website">Source Code: <i class="bi bi-file-code"></i></a>
-                            </li>
-                        </ul>
-                    </li>
-                    
-                </ul>
-                <form class="form-check form-switch">
-                    <label id="bright-switch-label" for="bright-switch">Dark Mode</label>
-                    <input class="form-check-input" type="checkbox" role="switch" id="bright-switch" onclick="brightness()">
-                </form>
+        <!--Navigation Bar-->
+        <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <!--Main Page Title-->
+                <a class="navbar-brand" href="index.html">Java Dynamic Website Tutorial</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--The rest of navbar-->
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <!--Collapsing navigation bar section-->
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                About
+                            </a>
+                            <ul class="dropdown-menu text-center">
+                                <li>
+                                    <a class="dropdown-item" href="pages/about.html">About Page</a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" aria-current="page" href="https://github.com/Collyz">My GitHub <i class="bi bi-github"></i></a>
+                                </li>
+                                <li>
+                                    <a class="dropdown-item" href="https://github.com/Collyz/Java-Dynamic-Website">Source Code <i class="bi bi-file-code"></i></a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
+                                Resources
+                            </a>
+                            <ul class="dropdown-menu text-center">
+                                <li>
+                                    <a href="https://www.w3schools.com/html/" class="dropdown-item">W3 Schools HTML</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="dropdown-item">MDN HTML Reference</a>
+                                </li>
+                                <li>
+                                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="dropdown-item">MDN CSS Reference</a>
+                                </li>
+                                <li>
+                                    <a href="https://dev.mysql.com/doc/refman/8.0/en/" class="dropdown-item">MySQL Reference Manual</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">
+                                Download
+                            </a>
+                            <ul class="dropdown-menu text-center">
+                                <li>
+                                    <a href="https://dev.mysql.com/downloads/installer/" class="dropdown-item">MySQL 8 </a>
+                                </li>
+                                <li>
+                                    <a href="https://www.eclipse.org/downloads/" class="dropdown-item"  data-bs-toggle="tooltip" data-bs-placement="bottom" data-bs-title="Yes... you need to use this IDE for this tutorial">Eclipse</a>
+                                </li>
+                            </ul>
+                        </li>
+                        
+                    </ul>
+                    <form class="form-check form-switch">
+                        <label id="bright-switch-label" for="bright-switch">Dark Mode</label>
+                        <input class="form-check-input" type="checkbox" role="switch" id="bright-switch" onclick="brightness()">
+                    </form>
+                </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <aside class="bd-sidebar">
+            <div class="offcanvas-lg offcanvas-start">
+                
+            </div>
+        </aside>
     <body id="main-body-text">
         
     </body>
