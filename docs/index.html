@@ -1,20 +1,26 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-bs-theme="dark">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!--For Mobile Responsiveness with Bootstrap-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
     <!--Bootstrap CDN-->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+    
     <!--Bootstrap icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    
     <!--Light/Dark mode script-->
     <script src="../js/scripts.js"></script>
+    <!--Stylesheets-->
     <link rel="stylesheet" href="../styles/styles.css">
+    <!--Title-->
     <title>Java Dynamic Website Tutorial</title>
 </head>
-<body data-bs-theme="dark">
+<body>
     <!--Navigation Bar-->
     <nav id="navbar" class="navbar navbar-expand-lg bg-body-tertiary">
         <div class="container-fluid">
@@ -81,60 +87,87 @@
             </div>
         </div>
     </nav>
-    <aside class="bd-sidebar">
-        <div class="offcanvas-lg offcanvas-start">
- 
-        </div>
-    </aside>
-    <div id="main-text" class="container mt-3">
-        <h1 class="display-3">Creating Your First Java Dynamic Website</h1>
+    
+    <div class="container mt-3">
+        <h1 class="display-3">Java Dynamic Website Tutorial for Beginners</h1>
         <hr class="line-break mt-0 mb-4">
-        <h1>Goal</h1>
-        <p class="text-wrap">The goal of this project is to painlessly setup the development environment for a Java dynamic websites.
-            The only other IDE as far as I know of, that provides support for development of Java websites is <i>Intellij IDE Ultimate Edition*</i>.
-            This differs from the well known <i>Community Edition</i> which is free unlike the former.
-        </p>
-        <br>
-        <b><u>Prerequisites</u></b>
-        <ul>
-            <li>TEMP DELETE</li>
-            <li>Have Java installed</li>
-            <li>Have MySQL installed (if not goto <a href="https://www.simplilearn.com/tutorials/mysql-tutorial/mysql-workbench-installation">here</a>), offloading the installation process since I am not installing MySQL again</li>
-        </ul>
-        <b><u>Do Now</u></b>
-        <ol>
-            <li>Download <a href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a>
-                <ul>
-                    <li><a href="#EclipseConfig">Goto</a></li>
-                </ul>
-            </li>
-                
-            <li>Download <a href="https://dev.mysql.com/downloads/">MySQL</a> (Community Edition)
-                <ul>
-                    <li><a href="#MySQLConfig">Goto</a></li>
-                </ul>    
-            </li>
-            <li>Download Apache Tomact (Will be done inside Eclipse)
-                <ul>
-                    <li><a href="#TomcatInstall">Goto</a></li>
-                </ul>
-            </li>
-        </ol>
-
-        <h2 id="EclipseConfig">Configuring Eclipse</h3>
-        <p>After downloading the installer, you will be greeted with this installer:
-            <br>
-            <img src="" alt="">
-        </p>
-        <h3 id="TomcatInstall">Installing Tomcat 10</h4>
-        <h2 id="MySQLConfig">Installing MySQL</h3>
-        <h3>Retrieving MySQL Jar</h4>
-        <b>If the MySQL Installer did not provide the MySQL JDBC jar then download 
-            <a href="https://dev.mysql.com/downloads/connector/j/">here</a>,  other wise <i>skip</i>
-            Wouldn't be a bad idea to test the JDBConnector before you move onto the next steps.
-        </b>
-        
     </div>
+
+     <!--Main Body-->
+    <main class="bd-main order-1">
+        <div id="header" class="container mt-3 bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+            <h4>On this page</h4>
+        </div>
+
+        <div class="container mt-3">
+            <div class="row">
+                <!-- Sidebar -->
+                <div class="col-md-3 col-lg-2">
+                    <button class="btn d-md-none" type="button" data-bs-toggle="collapse" data-bs-target="#sidebar" aria-expanded="false" aria-controls="sidebar">
+                        Toggle Sidebar
+                    </button>
+                    <div class="collapse d-md-block" id="sidebar">
+                        <ul class="mt-0 ">
+                            <li>Eclipse IDE Setup</li>
+                            <li>MySQL Java Connector Configuring</li>
+                            <li>Tomcat Configuring</li>
+                        <ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container mt-3">
+            <h1>Goal</h1>
+            <p class="text-wrap">The goal of this project is to painlessly setup the development environment for a Java Web Applications using 
+                "Eclipse IDE for EE Developers". Java provides web support through <b>Servlets</b> and <b>JSPs</b>. 
+                We will explore these aspects and you can use them to develop your first Java website.
+            </p>
+            <b><u>Prerequisites</u></b>
+            <ul>
+                <li>Have Java installed</li>
+                <li>Have MySQL installed... <a class="links external-links" target="_blank" href="https://www.simplilearn.com/tutorials/mysql-tutorial/mysql-workbench-installation">Installation instructions</a></li>
+            </ul>
+            <b><u>Page Contents</u></b>
+            <ol>
+                <li>Download <a  class="links external-links" target="_blank" href="https://www.eclipse.org/downloads/packages/installer">Eclipse</a>
+                    <ul>
+                        <li><a class="links" href="#EclipseConfig">Jump to Setup Instructions</a></li>
+                    </ul>
+                </li>
+                    
+                <li>Download MySQL Java Database Connector<a class="links external-links" target="_blank" href="https://dev.mysql.com/downloads/"> (Connector/J)</a>
+                    <ul>
+                        <li><a class="links" href="#MySQLConfig">Jump to Configuring in Eclipse</a></li>
+                    </ul>    
+                </li>
+                <li>Download Apache Tomact (Will be done inside Eclipse) 
+                    <ul>
+                        <li><a class="links" href="#TomcatInstall">Jump to Server Setup Instructions</a></li>
+                    </ul>
+                </li>
+            </ol>
+    
+            <h2 id="EclipseConfig">Configuring Eclipse</h3>
+            <p>Launching the Eclipse installer greets you with this:
+                <br>
+                <img class="d-flex justify-content-center" src="/images/Eclipse Install .png" alt="Eclipse Installer Pic" width="80%">
+                
+                Choose the option detailed <b><u>'Eclipse IDE for Enterprise Java and Web Development'</u></b>
+                <br>
+                Once setup is complete, 
+            </p>
+            <h3 id="TomcatInstall">Installing Tomcat 10</h4>
+            <h2 id="MySQLConfig">Installing MySQL</h3>
+            <h3>Retrieving MySQL Jar</h4>
+            <b>If the MySQL Installer did not provide the MySQL JDBC jar then download 
+                <a href="https://dev.mysql.com/downloads/connector/j/">here</a>,  other wise <i>skip</i>
+                Wouldn't be a bad idea to test the JDBConnector before you move onto the next steps.
+            </b>
+            
+        </div>
+    </main>
+    
 
 
 
