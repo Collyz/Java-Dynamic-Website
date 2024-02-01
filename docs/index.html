@@ -147,7 +147,7 @@
                 </li>
             </ol>
     
-            <h2 id="EclipseConfig">Configuring Eclipse</h3>
+            <h2 id="EclipseConfig"><u>Configuring Eclipse</u></h3>
             <p>
                 Launching the Eclipse installer greets you with this:
                 <br>
@@ -158,36 +158,62 @@
                 <br>
                 Once setup is complete, you will be greated with the default Eclipse screen if you have no existing projects.
             </p>
-            <h2 id="CreatingProject">Creating the Project</h2>
+            <h2 id="CreatingProject"><u>Creating the Project</u></h2>
             <p>
-                <img src="../images/new_proj.png" alt="new_proj_img1">
+                Begin by going to the top right (on Windows) and clicking File >> New >> Dynamic Web Project
                 <br>
                 <br>
-                <img src="../images/proj_setup_1.png" alt="new_proj_img1">
+                <img src="../images/new_proj.png" alt="new_proj_img1" width="80%">
                 <br>
                 <br>
-                <img src="../images/proj_setup_2.png" alt="new_proj_img1">
+                The pop-up below will greet you. Name your project, and choose a location to store the project. Next click on 'New Runtime' for 'Target runtime'
                 <br>
                 <br>
-                <img src="../images/proj_setup_3.png" alt="new_proj_img1">
+                <img src="../images/proj_setup_1.png" alt="new_proj_img2" width="80%">
                 <br>
                 <br>
-                <img src="../images/proj_setup_4.png" alt="new_proj_img1">
+                The runtime is what server you will run the project on, select 'Apache Tomcat v10.1.' Make sure to tick the checkbox labeled 'Create a new local server.' Click next
                 <br>
                 <br>
-                <img src="../images/proj_setup_5.png" alt="new_proj_img1">
+                <img src="../images/proj_setup_2.png" alt="new_proj_img3" width="80%">
                 <br>
                 <br>
+                A new pop-up will appear that requires you to choose a installation directory. After choosing an appropriate directory, click 'Download and Install...' 
+                <br>
+                <br>
+                <img src="../images/proj_setup_3.png" alt="new_proj_img4" width="80%">
+                <br>
+                <br>
+                Agree to the license and click 'Finish'
+                <br>
+                <br>
+                <img src="../images/proj_setup_4.png" alt="new_proj_img5" width="80%">
+                <br>
+                <br>
+                You will be greated with the original pop-up that now has a designated 'Target runtime.' All other criteria can be left as is, click 'Finish'.
+                <br>
+                <br>
+                <img src="../images/proj_setup_5.png" alt="new_proj_img1" width="80%">
+                <br>
+                <br>
+                Hopefully, following these steps assure that you have an appropriately setup project to run your Java Dynamic Website.
             </p>
-            <h2 id="TomcatInstall">Installing Tomcat 10</h2>
-            <h2 id="MySQLConfig">Installing MySQL</h2>
+            <h2 id="WebsiteStart"><u>Creating a Dynamic Website</u></h2>
+            <p>
+                Looking at the file system, expand your 'Project Folder' >> 'src' >> main >> webapp
+                <br>
+                <br>
+                <img src="../images/proj_coding_1.png" alt="proj_code_img1" width = "80%">
+            </p>
             <h2>Retrieving MySQL Jar</h2>
             <b>If the MySQL Installer did not provide the MySQL JDBC jar then download 
-                <a href="https://dev.mysql.com/downloads/connector/j/">here</a>,  other wise <i>skip</i>
+                <a href="https://dev.mysql.com/downloads/connector/j/">here</a>,  other wise <i>skip</i>.
                 Wouldn't be a bad idea to test the JDBConnector before you move onto the next steps.
             </b>
             
         </div>
+        <br>
+        <br>
     </main>
 
 </body>
